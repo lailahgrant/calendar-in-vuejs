@@ -54,6 +54,45 @@ ul{
     padding-top:10px;
 }
 
+.weekdays{
+    margin:0;
+    padding:10px 0;
+    /* background:rgb(208,240,192); */
+    background:#C4DCBE;
+    /* display:flex; */
+}
+
+.weekdays li{
+    display: inline-block;
+    width:13.6%;
+    text-align:center;
+    /* flex-direction:row;
+    justify-content:space-between; */
+}
+
+.days{
+    padding:10px 0;
+    background:#DAE9D6;
+    margin:0;
+}
+
+.days li{
+    list-style-type:none;
+    display:inline-block;
+    width:13.6%;
+    text-align:center;
+    margin-bottom:20px;
+    font-size:1em;
+}
+
+.days li .active{
+    color:#fff !important;
+    background:#71B280;
+    padding:.3em;
+    border-radius:50%;
+}
+
+
 
 
 
