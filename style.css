@@ -8,6 +8,7 @@ body{
     font-family: "viga", "salsa", "sniglet";
     font-size:1.5em;
     color: rgb(73, 59, 59);
+    /* background: #222222; */
 }
 
 .container{
@@ -92,6 +93,29 @@ ul{
     border-radius:50%;
 }
 
+/* Media queries for smaller screens */
+@media screen and (max-width:720px){
+    .weekdays li, .days li{
+        width:13.1%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .weekdays li, .days li{
+        width:12.5%;
+    }
+
+    .days li .active {
+        padding:.2em;
+    }
+
+}
+
+@media screen and (max-width:290px){
+    .weekdays li, .days li {
+        width:12.2%;
+    }
+}
 
 
 
