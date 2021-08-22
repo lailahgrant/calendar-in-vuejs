@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    
+    <!--Moment.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+    
     <link rel="stylesheet" href="style.css">
     <title>Calendar in Vuejs</title>
 </head>
@@ -15,13 +18,13 @@
         <h1>{{ heading }}</h1>
 
     <div class="month">
-        <ul>
-            <li class="prev">&#10094 Last Month </li>
-            <li class="next">Next Month &#10095</li>
-            <li>
+        <div>
+            <a class="prev">&#10094</a>
+            <a @click="nextMonth" class="next">&#10095</a>
+            <p>
                 August <br> <span style="font-size:18px">2021</span>
-            </li>
-        </ul>
+            </p>
+        </div>
     </div>
 
     <ul class="weekdays">
