@@ -11,6 +11,7 @@ var app = new Vue({
     },
     
     methods: {
+        // on the arrows to next month or previous month
         nextMonth() {
             this.dateContext = moment(this.dateContext).add(1, 'month');
         },
@@ -19,4 +20,26 @@ var app = new Vue({
             this.dateContext = moment(this.dateContext).subtract(1, 'month');
         }
     },
+
+    computed: {
+        year() {
+            return  this.dateContext.format('YYYY');
+        },
+
+        month() {
+            return this.dateContext.format('MMMM');
+        },
+
+        daysInMonth: function () {
+            return this.dateContext.daysInMonth();
+        },
+
+        currentDate() {
+            return this.dateContext.get('date');
+        },
+
+        firstDayOfMonth() {
+            var firstDay = moment(this.dateContext).subtract((this.currentDate - 1), 'days')
+        }
+    }
 })
