@@ -1,5 +1,3 @@
-import moment from 'https://cdn.jsdelivr.net/npm/vue-moment@4.0.0-0/vue-moment.min.js'
-
 
 
 var app = new Vue({
@@ -15,6 +13,10 @@ var app = new Vue({
     methods: {
         nextMonth() {
             this.dateContext = moment(this.dateContext).add(1, 'month');
+        },
+
+        lastMonth(){
+            this.dateContext = moment(this.dateContext).subtract(1, 'month');
         }
     },
 })

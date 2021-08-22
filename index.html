@@ -8,7 +8,7 @@
     
     <!--Moment.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
-    
+
     <link rel="stylesheet" href="style.css">
     <title>Calendar in Vuejs</title>
 </head>
@@ -22,7 +22,7 @@
             <a class="prev">&#10094</a>
             <a @click="nextMonth" class="next">&#10095</a>
             <p>
-                August <br> <span style="font-size:18px">2021</span>
+                {{ month }} <br> <span style="font-size:18px">{{ year }}</span>
             </p>
         </div>
     </div>
