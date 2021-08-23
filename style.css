@@ -89,12 +89,12 @@ ul{
     font-size:1em;
 }
 
-.days li .active{
+/* .days li .active{
     color:#fff !important;
     background:#71B280;
     padding:.3em;
     border-radius:50%;
-}
+} */
 
 /* class added through Class binding :class */
 .today{
