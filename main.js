@@ -41,6 +41,20 @@ var app = new Vue({
         firstDayOfMonth() {
             var firstDay = moment(this.dateContext).subtract((this.currentDate - 1), 'days');
             return firstDay.weekday();
+        },
+
+        //formats
+        initialDate() {
+            return this.today.get('date');
+        },
+
+        initialMonth() {
+            return this.today.format('MMMM');
+        },
+
+        initialYear() {
+            return this.today.format('YYYY');
         }
+
     }
 })
