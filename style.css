@@ -96,6 +96,12 @@ ul{
     border-radius:50%;
 }
 
+/* class added through Class binding :class */
+.today{
+    color:teal;
+    font-weight:bolder;
+}
+
 /* Media queries for smaller screens */
 @media screen and (max-width:720px){
     .weekdays li, .days li{

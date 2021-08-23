@@ -39,8 +39,7 @@
 
         <li v-for="empty in firstDayOfMonth"></li>
 
-        <li v-for="date in daysInMonth" @click="openday(date)"
-        		class="day" :class="{'today': date == initialDate && month == initialMonth && year == initialYear}">
+        <li v-for="date in daysInMonth" @click="openday(date)" :class="{'today': date == initialDate && month == initialMonth && year == initialYear}">
                 <span>{{date}}</span>
             </li>
 
