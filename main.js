@@ -7,7 +7,7 @@ var app = new Vue({
         heading: "Calendar",
         today: moment(),
         dateContext: moment(),
-        days: ['S', 'M', 'T', 'W', 'T', 'F','S']
+        days: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
     },
     
     methods: {
@@ -18,6 +18,11 @@ var app = new Vue({
 
         lastMonth(){
             this.dateContext = moment(this.dateContext).subtract(1, 'month');
+        },
+
+        //empty fn
+        openday() {
+            
         }
     },
 
